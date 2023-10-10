@@ -52,6 +52,7 @@ const handleCellClick = (index) => {
 	boardState[index] = currentPlayer;
 	cells[index].textContent = currentPlayer;
 	
+	
 	const winner = checkWin();
 	if (winner) {
 		if (winner === "Draw") {
